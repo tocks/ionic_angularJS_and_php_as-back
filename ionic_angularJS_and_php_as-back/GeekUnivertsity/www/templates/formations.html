@@ -1,0 +1,12 @@
+<ion-view title="Formations">
+  <ion-content>
+    <h2>Formations</h2>
+      <ion-list>
+        <ion-item  class="item item-avatar" ng-repeat="f in formations.data">
+          <p>{{ f.diplome }}</p>
+          <p>{{ f.nom}}</p>
+          <h2>Durée: <strong>{{ f.duree}}</strong></h2>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

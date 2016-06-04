@@ -1,0 +1,11 @@
+<ion-view title="Etablishments">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-click="chargerFormations(e.etab_id)" class="item item-avatar" ng-repeat="e in etablishments.data">
+        <img ng-src="http://localhost/geekuniversity/img/{{ e.logo }}">
+        <p>{{ e.nomAbrege }}</p>
+        <h2>{{ e.nom}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
